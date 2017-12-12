@@ -5,8 +5,8 @@
 }
 
 .serviceImg {
-  width: 125px;
-  height: 125px;
+  width: 300px;
+  height: 300px;
   border: 7px solid $white;
   margin: 5px;
 }
@@ -14,4 +14,11 @@
 .key-word { 
   font-weight: bold;
   color:#F80286;
+}
+
+.service-col {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    min-width: 300px;
 }
