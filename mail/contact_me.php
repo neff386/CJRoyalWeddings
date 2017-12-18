@@ -1,6 +1,6 @@
 <?php
 //
-require 'autoload.php';
+require_once ('autoload.php');
 // Check for empty fields
 if(empty($_POST['name'])      ||
    empty($_POST['email'])     ||
@@ -26,7 +26,7 @@ $headers = "From: noreply@royalweddings.com\n"; // This is the email address the
 $headers .= "Reply-To: $email_address";  
 $mail = SendGrid\Mail($from, $headers, $to, $email_body); 
 
-$apiKey = getenv('SENDGRID_API_KEY');
+$apiKey = ('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');
 $sg = new \SendGrid($apiKey);
 
 $response = $sg->client->mail()->send()->post($mail);
