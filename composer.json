@@ -1,9 +1,6 @@
 {
-    "extra":{
-        "heroku": {
-            "compile": [
-                "chmod -R 755 /vendor"
-            ]
+    
+        "require": {
+          "sendgrid/sendgrid": "~6.0"
         }
-    }
 }
