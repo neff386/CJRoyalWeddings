@@ -1,7 +1,7 @@
 require('dotenv').config();
 const sgMail = require('@sendgrid/mail');
 var express = require('express');
-
+const PORT = process.env.PORT || 5000;
 
 var app = express();
 app.use(express.static('public'));
@@ -39,7 +39,7 @@ app.post('/send', function(req, res) {
     res.send(true);
 });
 
-app.listen(5000, function(err) {
+app.listen(PORT, function(err) {
 
     console.log('running');
     
