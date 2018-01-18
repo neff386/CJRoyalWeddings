@@ -3,6 +3,7 @@
   "name": "RoyalWeddings",
   "version": "0.0.1",
   "description": "Cathy Johnson Royal Weddings is a wedding planning and floral arrangment service",
+ "scripts": { "start": "node public/src/sendMail.js"} ,
   "keywords": [
     "css",
     "sass",
